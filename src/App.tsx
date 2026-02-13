@@ -11,7 +11,7 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [acceptedProposal, setAcceptedProposal] = useState(false);
   const [noPosition, setNoPosition] = useState({ x: 0, y: 0 });
-  const [showMessage, setShowMessage] = useState(false);
+  //const [showMessage, setShowMessage] = useState(false);
 
   
   const noButtonRef = useRef<HTMLButtonElement>(null);
@@ -142,8 +142,8 @@ function App() {
       if (noAttempts >= 8) return;
       
       // Show cute message
-      setShowMessage(true);
-      setTimeout(() => setShowMessage(false), 2000);
+      //setShowMessage(true);
+      //setTimeout(() => setShowMessage(false), 2000);
   
       // Generate random position far from current position
       const randomX = (Math.random() - 0.5) * 500;
